@@ -17,7 +17,10 @@ function LoginForm() {
     return (
 
         <div>
+            
             <form onSubmit={handleSubmit}>
+                            <h1> Bienvenue chez nous !</h1>
+            <p> Connectez-vous</p>
                 <label htmlFor="prenom"></label>
                 <input
                     id="prenom"
