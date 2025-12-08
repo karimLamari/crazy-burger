@@ -1,5 +1,5 @@
 import {useState} from "react";
-
+import { Link } from "react-router-dom";
 function LoginForm() {
      //state
         const [prenom, setPrenom] = useState('');
@@ -34,6 +34,7 @@ function LoginForm() {
                 >
                     Accéder a votre espace
                 </button>
+                <Link to="/order">vers orderpage</Link>
             </form>
 
         </div>
