@@ -3,7 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { theme } from "../../../index.js";
 import { IoChevronForward } from "react-icons/io5";
-import Input from "./Input.jsx";
+import TextInput from "./TextInput.jsx";
+import { BsPersonCircle } from "react-icons/bs";
+
 function LoginForm() {
   const navigate = useNavigate();
 
@@ -22,7 +24,7 @@ function LoginForm() {
       <h2> Bienvenue chez nous !</h2>
       <hr />
       <p> Connectez-vous</p>
-      <Input required value={inputValue} onChange={handleChange} placeholder="Entrez votre prénom" />
+      <TextInput Icon={<BsPersonCircle className="icon"/>} required value={inputValue} onChange={handleChange} placeholder="Entrez votre prénom" />
       <button className="button-icon" type="submit">
         <span>Accéder a votre espace</span>
         <IoChevronForward />
@@ -56,25 +58,9 @@ const LoginFormStyled = styled.form`
       width:100%;
       color:${theme.colors.primary};
 }
-    .input-container{
-      background-color:${theme.colors.background_white};
-      display:flex;
-      align-items:center;
-      gap:${theme.spacing.xs};
-      border-radius:${theme.borderRadius.round};
-      width:100%;
-      .icon{
-        margin-left:${theme.spacing.xs};
-        }
-}
-      input{
-        border:none;
-        font-size:${theme.fonts.P1};
-        padding:${theme.spacing.xs};
-
-}
+   
       .button-icon{
-      padding:${theme.spacing.sm} ${theme.spacing.lg};
+      padding:${theme.spacing.md} ${theme.spacing.xl};
       background-color:${theme.colors.primary};
       width:100%;
       color:${theme.colors.white};
