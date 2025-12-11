@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components';
-import logo from '/home/quxly/Bureau/crazy-burger/public/images/logo.png'
+import {theme} from "../../../index.js";
+
 const Logo = () => {
   return (
     <LogoStyled>
-      CRAZEE
-      <img src={logo} alt="Logo Crazy Burger" width={28} />
-      BURGER
+      <h1>CRAZEE 
+        <img src="/images/logo.png" alt="Logo Crazee Burger"  />
+        BURGER</h1>
       </LogoStyled>
   )
 }
@@ -14,4 +15,26 @@ const Logo = () => {
 export default Logo;
 
 const LogoStyled= styled.div`
+color: white;
+display:flex;
+justify-content:center;
+align-items:center;
+
+h1{
+display:inline;
+color:${theme.colors.primary};
+font-size:${theme.fonts.P4};
+font-weight:${theme.weights.bold};
+text-transform:uppercase;
+letter-spacing:1.5px;
+font-family:'amatic sc', cursive;
+
+img{
+object-fit:cover;
+object-position:center;
+margin:0 ${theme.spacing.xs};
+height:60px;
+width:80px;
+}
+
   `;
