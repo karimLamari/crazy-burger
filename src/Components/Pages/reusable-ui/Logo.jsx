@@ -23,11 +23,12 @@ align-items:center;
 h1{
 display:inline;
 color:${theme.colors.primary};
-font-size:${theme.fonts.P4};
+font-size:${theme.fonts.P6};
 font-weight:${theme.weights.bold};
 text-transform:uppercase;
 letter-spacing:1.5px;
 font-family:'amatic sc', cursive;
+margin:0;
 
 img{
 object-fit:cover;
@@ -36,5 +37,5 @@ margin:0 ${theme.spacing.xs};
 height:60px;
 width:80px;
 }
-
-  `;
+}
+`;
