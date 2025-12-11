@@ -15,16 +15,19 @@ function TextInput({ value, onChange, Icon, ...props }) {
 export default TextInput;
 
 const InputStyled = styled.div`
+padding:${theme.spacing.xs};
       background-color:${theme.colors.background_white};
       display:flex;
       align-items:center;
       gap:${theme.spacing.xs};
       border-radius:${theme.borderRadius.round};
-      padding:${theme.spacing.xs} ${theme.spacing.sm};
-        
       .icon{
         color:${theme.colors.greyDark};
-}
+      }
+      input{
+        border:none;
+        width:100%;
+        font-size:${theme.fonts.P1};
     
 }
 

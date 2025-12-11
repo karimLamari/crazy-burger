@@ -3,8 +3,10 @@ import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { theme } from "../../../index.js";
 import { IoChevronForward } from "react-icons/io5";
-import TextInput from "./TextInput.jsx";
+import TextInput from "../reusable-ui/TextInput.jsx";
 import { BsPersonCircle } from "react-icons/bs";
+import { IoLockClosed } from "react-icons/io5";
+import PrimaryButton from "../reusable-ui/PrimaryButton.jsx";
 
 function LoginForm() {
   const navigate = useNavigate();
@@ -14,10 +16,15 @@ function LoginForm() {
     setInputValue("");
     navigate(`/order/${inputValue}`);
   };
+  
   const handleChange = (e) => {
     setInputValue(e.target.value);
   };
+  const handleMotDePasseChange = (e) => {
+    setMotDePasse(e.target.value);
+  };
   const [inputValue, setInputValue] = useState("");
+  const [motDePasse, setMotDePasse] = useState("");
 
   return (
     <LoginFormStyled onSubmit={handleSubmit}>
@@ -25,10 +32,9 @@ function LoginForm() {
       <hr />
       <p> Connectez-vous</p>
       <TextInput Icon={<BsPersonCircle className="icon"/>} required value={inputValue} onChange={handleChange} placeholder="Entrez votre prénom" />
-      <button className="button-icon" type="submit">
-        <span>Accéder a votre espace</span>
-        <IoChevronForward />
-      </button>
+      <TextInput Icon={<IoLockClosed className="icon"/>} required value={motDePasse} onChange={handleMotDePasseChange} type="password" placeholder="Entrez votre mot de passe" />
+      <PrimaryButton label="Accéder à votre espace" Icon={<IoChevronForward />} />
+
     </LoginFormStyled>
   );
 }
@@ -59,19 +65,5 @@ const LoginFormStyled = styled.form`
       color:${theme.colors.primary};
 }
    
-      .button-icon{
-      padding:${theme.spacing.md} ${theme.spacing.xl};
-      background-color:${theme.colors.primary};
-      width:100%;
-      color:${theme.colors.white};
-      border-radius:${theme.borderRadius.round};
-      display:flex;
-      justify-content:center;
-      align-items:center;
 
-      &:hover{
-        cursor:pointer;
-        background-color:${theme.colors.background_white} ;
-        color:${theme.colors.primary} ;
-      }
     `;
