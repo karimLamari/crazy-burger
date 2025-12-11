@@ -28,7 +28,7 @@ font-weight:${theme.weights.bold};
 text-transform:uppercase;
 letter-spacing:1.5px;
 font-family:'amatic sc', cursive;
-margin:0;
+margin-bottom:${theme.spacing.md};
 
 img{
 object-fit:cover;
