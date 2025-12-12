@@ -1,10 +1,16 @@
 import styled from "styled-components";
 import { theme } from "../../../theme";
+import { useState } from "react";
+import Menu from "./Menu";
+import {fakeMenu1,fakeMenu2} from "../../../data/fakeMenu";
 
 export default function Main() {
+const [menus, setMenus] = useState([...fakeMenu1, ...fakeMenu2]);
+
   return (
     <MainStyled>
-        
+      <Menu menus={menus} />
+
     </MainStyled>
   )
 }
@@ -16,4 +22,7 @@ const MainStyled=styled.div`
         flex:1;
         border-bottom-left-radius: ${theme.borderRadius.extraRound};
         border-bottom-right-radius: ${theme.borderRadius.extraRound};
+
+        
+
 `;
