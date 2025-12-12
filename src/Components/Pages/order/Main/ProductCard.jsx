@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { theme } from "../../../theme";
+import { theme } from "../../../../theme";
 
-export default function MenuCard({ title, imageSource, price }) {
+export default function ProductCard({ title, imageSource, price }) {
   return (
-    <MenuCardStyled>
+    <ProductCardStyled>
       <div className="menu-item">
         <img src={imageSource} alt={title} className="menu-image" />
         <h2 className="menu-title">{title}</h2>
@@ -12,11 +12,11 @@ export default function MenuCard({ title, imageSource, price }) {
           <button>Ajouter</button>
         </div>
       </div>
-    </MenuCardStyled>
+    </ProductCardStyled>
   );
 }
 
-const MenuCardStyled = styled.div`
+const ProductCardStyled = styled.div`
 
         .menu-item{
         display:flex;

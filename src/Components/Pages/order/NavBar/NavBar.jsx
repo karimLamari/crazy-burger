@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Logo from "../reusable-ui/Logo.jsx";
-import { theme } from "../../../theme/index.js";
+import Logo from "../../reusable-ui/Logo.jsx";
+import { theme } from "../../../../theme/index.js";
 import Profile from "./Profile.jsx";
 
 export default function NavBar({ username }) {

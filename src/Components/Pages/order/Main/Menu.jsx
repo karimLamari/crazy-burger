@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { theme } from "../../../theme";
 import styled from "styled-components";
-import MenuCard from "./MenuCard";
+import ProductCard from "./ProductCard";
 
 export default function Menu({ menus }) {
 
@@ -9,7 +8,7 @@ export default function Menu({ menus }) {
     <MenuStyled>
         {
         menus.map((item)=>(
-            <MenuCard key={item.title} title={item.title} imageSource={item.imageSource} price={item.price} />
+            <ProductCard key={item.title} title={item.title} imageSource={item.imageSource} price={item.price} />
         ))
         }
 
