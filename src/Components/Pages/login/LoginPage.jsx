@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Login() {
   return (
     <LoginPageStyled>
-      <Logo />
+      <Logo className="logo-login-page" />
       <LoginForm />
     </LoginPageStyled>
   );
@@ -17,9 +17,7 @@ const LoginPageStyled = styled.div`
   height: 100vh;
   justify-content: center;
   align-items: center;
-
-  &::before {
-    content: "";
+  gap: 50px;
     background:
         rgba(0, 0, 0, 0.5);
     background-image:
@@ -34,5 +32,7 @@ const LoginPageStyled = styled.div`
     height: 100%;
     z-index: -1;
   }
-
+  .logo-login-page{
+  transform: scale(2.5);
+}
 `;
