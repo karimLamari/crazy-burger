@@ -1,4 +1,6 @@
 html, body, #root {
     max-width: 1400px;
   margin: 0 auto; 
+  background-color: orange;
+  font-family: "Open Sans", sans-serif;
 }

@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 import {theme} from "../../../theme/index.js";
 
-const Logo = () => {
+const Logo = ({className}) => {
   return (
-    <LogoStyled>
+    <LogoStyled className={className}>
       <h1>CRAZEE 
         <img src="/images/logo.png" alt="Logo Crazee Burger"  />
         BURGER</h1>
@@ -29,7 +29,7 @@ line-height:1em;
 text-transform:uppercase;
 letter-spacing:1.5px;
 font-family:'amatic sc', cursive;
-margin-bottom:${theme.spacing.md};
+margin:0;
 
 img{
 object-fit:cover;
