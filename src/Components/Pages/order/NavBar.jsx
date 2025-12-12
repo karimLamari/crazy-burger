@@ -24,7 +24,8 @@ const NavBarStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: ${theme.borderRadius.round};
+  border-top-left-radius: ${theme.borderRadius.extraRound};
+  border-top-right-radius: ${theme.borderRadius.extraRound};
 
 
   .left-side {
