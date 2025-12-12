@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../../theme";
 
 export default function Main() {
   return (
@@ -10,8 +11,9 @@ export default function Main() {
 
 const MainStyled=styled.div`
       width:100%;
-      background:white;
-      box-shadow: 
-        inset 10px 10px 15px rgba(0,0,0,0.2),
-        inset -10px -10px 15px rgba(0,0,0,0.2);      flex:1;
+      background:${theme.colors.background_white};
+      box-shadow: 0px 8px 20px 8px rgba(0,0,0,0.2) inset;
+        flex:1;
+        border-bottom-left-radius: ${theme.borderRadius.extraRound};
+        border-bottom-right-radius: ${theme.borderRadius.extraRound};
 `;
