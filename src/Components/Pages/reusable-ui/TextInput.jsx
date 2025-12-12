@@ -1,6 +1,6 @@
 import { BsPersonCircle } from "react-icons/bs";
-import { theme } from "../../../index.js";
 import styled from "styled-components";
+import { theme } from "../../../theme";
 
 function TextInput({ value, onChange, Icon, ...props }) {
   console.log(Icon);
@@ -15,20 +15,25 @@ function TextInput({ value, onChange, Icon, ...props }) {
 export default TextInput;
 
 const InputStyled = styled.div`
-padding:${theme.spacing.xs};
-      background-color:${theme.colors.background_white};
-      display:flex;
-      align-items:center;
-      gap:${theme.spacing.xs};
-      border-radius:${theme.borderRadius.round};
-      .icon{
-        color:${theme.colors.greyDark};
-      }
-      input{
-        border:none;
-        width:100%;
-        font-size:${theme.fonts.P1};
-    
-}
+  background-color: ${theme.colors.white};
+  border-radius : ${theme.borderRadius.round};
+  display: flex;
+  align-items: center;
+  padding: 18px 24px;
+  width: 80%;
+
+  input{
+    border: none;
+    font-size: ${theme.fonts.P0};
+    color: ${theme.colors.greySemiDark};
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &::placeholder{
+      background-color: ${theme.colors.white};
+      color: ${theme.colors.greySemiDark};
+      font-size: ${theme.fonts.P0};
+    }
+  }
 
 `;

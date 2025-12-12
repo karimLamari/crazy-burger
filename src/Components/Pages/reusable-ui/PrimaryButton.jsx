@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../../../index.js";
+import { theme } from "../../../theme";
 export default function PrimaryButton({ label , Icon }) {
   return (
     <PrimaryButtonStyled>
@@ -10,17 +10,18 @@ export default function PrimaryButton({ label , Icon }) {
 }
 
 const PrimaryButtonStyled = styled.button`
-    padding:${theme.spacing.xs};
 
       background-color:${theme.colors.primary};
-      width:100%;
+      width:92%;
+      padding: 18px 24px;
       color:${theme.colors.white};
       font-size:${theme.fonts.P1};
       border-radius:${theme.borderRadius.round};
       display:flex;
       justify-content:center;
       align-items:center;
-
+      
+  
       &:hover{
         cursor:pointer;
         background-color:${theme.colors.background_white} ;

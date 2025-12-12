@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import {theme} from "../../../index.js";
+import {theme} from "../../../theme/index.js";
 
 const Logo = () => {
   return (
@@ -25,6 +25,7 @@ display:inline;
 color:${theme.colors.primary};
 font-size:${theme.fonts.P6};
 font-weight:${theme.weights.bold};
+line-height:1em;
 text-transform:uppercase;
 letter-spacing:1.5px;
 font-family:'amatic sc', cursive;
