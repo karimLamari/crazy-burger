@@ -1,11 +1,9 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-
 import { IoChevronForward } from "react-icons/io5";
 import TextInput from "../reusable-ui/TextInput.jsx";
 import { BsPersonCircle } from "react-icons/bs";
-import { IoLockClosed } from "react-icons/io5";
 import PrimaryButton from "../reusable-ui/PrimaryButton.jsx";
 import { theme } from "../../../theme/index.js";
 
