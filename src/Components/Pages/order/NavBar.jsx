@@ -8,7 +8,7 @@ export default function NavBar({ username }) {
   return (
     <NavBarStyled>
       <div className="left-side">
-        <Logo />
+        <Logo className="logo-order-page"onClick={() => {window.location.reload();}} />
       </div>
       <div className="right-side">
         {/* <div className="admin-button">adminButton</div> */}
@@ -34,6 +34,8 @@ const NavBarStyled = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 ${theme.spacing.md};
+    .logo-order-page{
+      cursor:pointer;
   }
   .right-side {
     height: 100%;
