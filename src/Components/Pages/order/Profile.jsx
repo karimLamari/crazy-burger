@@ -28,7 +28,7 @@ display:flex;
           display:flex;
           flex-direction:column;
           justify-content:center;
-          gap:10px;
+          gap:2px;
           };
           p{
             display:flex;
