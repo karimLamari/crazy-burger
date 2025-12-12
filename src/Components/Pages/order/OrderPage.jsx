@@ -1,17 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import styled from "styled-components";
+import NavBar from "../order/NavBar.jsx";
+import Main from "./Main.jsx";
+import { theme } from "../../../theme/index.js";
 function OrderPage() {
   const { username } = useParams();
 
   return (
-    <>
-      <h1>Bonjour {username}</h1>
-      <Link to="/">
-        <button>Déconnexion</button>
-      </Link>
-    </>
+    <OrderPageStyled>
+      <div className="container">
+        <NavBar username={username} />
+        <Main />
+      </div>
+    </OrderPageStyled>
   );
 }
 
 export default OrderPage;
+
+const OrderPageStyled = styled.div`
+  height:100vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  
+  
+
+  .container{
+    height:95vh;
+    display:flex;
+    flex-direction:column;
+        border-top-left-radius: ${theme.borderRadius.round};
+        border-top-right-radius: ${theme.borderRadius.round};
+
+    }
+`;
