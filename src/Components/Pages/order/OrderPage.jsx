@@ -2,23 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
+import NavBar from "../order/NavBar.jsx";
+import Main from "./Main.jsx";
 function OrderPage() {
   const { username } = useParams();
 
   return (
     <OrderPageStyled>
       <div className="container">
-        <div className="navbar">
-        <h1>Bonjour {username}</h1>
-          navbar
-        <Link to="/">
-          <button>Déconnexion</button>
-        </Link>
-
-        </div>
-        <div className="main">
-          main
-        </div>
+        <NavBar username={username} />
+      <Main />
       </div>
     </OrderPageStyled>
   );
@@ -42,23 +35,6 @@ const OrderPageStyled=styled.div`
     max-width:1400px;
     display:flex;
     flex-direction:column;
-
-
-    .navbar{
-      height:10vh;
-      width:100%;
-      background:blue;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
-    .main{
-      width:100%;
-      background:green;
-      flex:1;
-    
-    }
-    
     
     }
 `
