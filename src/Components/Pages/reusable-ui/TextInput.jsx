@@ -19,7 +19,8 @@ const InputStyled = styled.div`
   display: flex;
   align-items: center;
   padding: 18px 24px;
-  width: 80%;
+  width: 100%;
+  box-sizing: border-box;
 
   input{
     border: none;

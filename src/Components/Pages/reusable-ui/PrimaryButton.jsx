@@ -1,18 +1,18 @@
 import styled from "styled-components";
 import { theme } from "../../../theme";
-export default function PrimaryButton({ label , Icon }) {
+export default function PrimaryButton({ label, Icon }) {
   return (
     <PrimaryButtonStyled>
       <span>{label}</span>
       {Icon && Icon}
-    </PrimaryButtonStyled> 
+    </PrimaryButtonStyled>
   );
 }
 
 const PrimaryButtonStyled = styled.button`
 
       background-color:${theme.colors.primary};
-      width:92%;
+      width:100%;
       padding: 18px 24px;
       color:${theme.colors.white};
       font-size:${theme.fonts.P1};
@@ -28,5 +28,5 @@ const PrimaryButtonStyled = styled.button`
         color:${theme.colors.primary} ;
       }
 
-      }
+    
 `;
