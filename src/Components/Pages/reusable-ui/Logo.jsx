@@ -21,22 +21,21 @@ justify-content:center;
 align-items:center;
 
 h1{
-display:inline;
+display:flex;
 color:${theme.colors.primary};
 font-size:${theme.fonts.P6};
 font-weight:${theme.weights.bold};
-line-height:1em;
-text-transform:uppercase;
 letter-spacing:1.5px;
 font-family:'amatic sc', cursive;
 margin:0;
+align-items:center;
 
 img{
 object-fit:cover;
 object-position:center;
 margin:0 ${theme.spacing.xs};
-height:60px;
 width:80px;
+height:60px;
 }
 }
 `;
