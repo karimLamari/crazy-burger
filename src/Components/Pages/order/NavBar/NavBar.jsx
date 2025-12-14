@@ -25,16 +25,6 @@ const handleToggleAdminMode = () => {
     });
   } else {
     setIsAdminMode(false);
-    toast.info("Mode admin désactivé", {
-        theme: "dark",
-        position: "bottom-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-    });
   }
 };
   return (
