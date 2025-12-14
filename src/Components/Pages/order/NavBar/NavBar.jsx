@@ -48,7 +48,7 @@ const handleToggleAdminMode = () => {
 }
 
 const NavBarStyled = styled.div`
-  height: 10vh;
+  min-height: 100px;
   background: ${theme.colors.white};
   display: flex;
   justify-content: space-between;

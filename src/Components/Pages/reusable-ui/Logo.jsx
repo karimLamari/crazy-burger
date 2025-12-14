@@ -23,7 +23,7 @@ align-items:center;
 h1{
 display:flex;
 color:${theme.colors.primary};
-font-size:${theme.fonts.P6};
+font-size:${theme.fonts.P4};
 font-weight:${theme.weights.bold};
 letter-spacing:1.5px;
 font-family:'amatic sc', cursive;
