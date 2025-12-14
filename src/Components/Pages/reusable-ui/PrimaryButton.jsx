@@ -10,7 +10,7 @@ export default function PrimaryButton({ label, Icon }) {
 }
 
 const PrimaryButtonStyled = styled.button`
-
+      border:none;
       background-color:${theme.colors.primary};
       width:100%;
       padding: 18px 24px;
@@ -20,6 +20,8 @@ const PrimaryButtonStyled = styled.button`
       display:flex;
       justify-content:center;
       align-items:center;
+      gap:5px;
+      font-weight:${theme.weights.bold};
       
   
       &:hover{

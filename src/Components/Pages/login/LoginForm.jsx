@@ -36,7 +36,7 @@ function LoginForm() {
       />
       <PrimaryButton
         label="Accéder à votre espace"
-        Icon={<IoChevronForward />}
+        Icon={<IoChevronForward className="icon-chevron" />}
       />
     </LoginFormStyled>
   );
@@ -77,7 +77,11 @@ const LoginFormStyled = styled.form`
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
     color: ${theme.colors.greyDark};
     padding-right: ${theme.spacing.sm};
+  }
+  .icon-chevron {
+    font-size:15px; 
   }
 `;
