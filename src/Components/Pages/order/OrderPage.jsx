@@ -1,15 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
-<<<<<<< HEAD
-import NavBar from "../order/NavBar/NavBar.jsx";
+import NavBar from "./NavBar/NavBar.jsx";
 import Main from "./Main/Main.jsx";
-=======
-import NavBar from "../order/NavBar.jsx";
-import Main from "./Main.jsx";
->>>>>>> 90aba0a00fa727c622fbbc901aca1b4660bc76f4
 import { theme } from "../../../theme/index.js";
+
 function OrderPage() {
   const { username } = useParams();
 
@@ -26,20 +20,17 @@ function OrderPage() {
 export default OrderPage;
 
 const OrderPageStyled = styled.div`
-  height:100vh;
-  width:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  
-  
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  .container{
-    height:95vh;
-    display:flex;
-    flex-direction:column;
-        border-top-left-radius: ${theme.borderRadius.round};
-        border-top-right-radius: ${theme.borderRadius.round};
-
-    }
+  .container {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: ${theme.borderRadius.round};
+    border-top-right-radius: ${theme.borderRadius.round};
+  }
 `;
