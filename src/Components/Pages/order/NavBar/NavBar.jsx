@@ -3,15 +3,53 @@ import Logo from "../../reusable-ui/Logo.jsx";
 import Profile from "./Profile.jsx";
 import ToggleButton from "./ToggleButton.jsx";
 import { theme } from "../../../../theme/index.js";
+import { toast } from "react-toastify";
+import { useState } from "react";
 
 export default function NavBar({ username }) {
+
+  const [isAdminMode, setIsAdminMode] = useState(false);
+  
+const handleToggleAdminMode = () => {
+  if (!isAdminMode) {
+    setIsAdminMode(true);
+    toast.info("Mode admin activé", {
+        theme: "dark",
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
+  } else {
+    setIsAdminMode(false);
+    toast.info("Mode admin désactivé", {
+        theme: "dark",
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
+  }
+};
   return (
     <NavBarStyled>
       <div className="left-side">
         <Logo className="logo-order-page"onClick={() => {window.location.reload();}} />
       </div>
       <div className="right-side">
-        <ToggleButton />
+        <ToggleButton 
+        labelIfChecked="Désactiver le mode admin" 
+        labelIfUnchecked="Activer le mode admin"
+        isChecked={isAdminMode}
+        onToggle={handleToggleAdminMode}
+        
+        />
         {/* <div className="admin-button">adminButton</div> */}
       <Profile username={username} />
       </div>
@@ -39,7 +77,7 @@ const NavBarStyled = styled.div`
       cursor:pointer;
     }
   }
-  .right-side {
+  .right-side { 
     height: 100%;
     display: flex;
     flex-direction: row;
