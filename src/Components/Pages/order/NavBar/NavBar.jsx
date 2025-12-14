@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../../reusable-ui/Logo.jsx";
-import { theme } from "../../../../theme/index.js";
 import Profile from "./Profile.jsx";
+import ToggleButton from "./ToggleButton.jsx";
+import { theme } from "../../../../theme/index.js";
 
 export default function NavBar({ username }) {
   return (
@@ -11,6 +11,7 @@ export default function NavBar({ username }) {
         <Logo className="logo-order-page"onClick={() => {window.location.reload();}} />
       </div>
       <div className="right-side">
+        <ToggleButton />
         {/* <div className="admin-button">adminButton</div> */}
       <Profile username={username} />
       </div>
