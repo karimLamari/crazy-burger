@@ -2,8 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
+<<<<<<< HEAD
 import NavBar from "../order/NavBar/NavBar.jsx";
 import Main from "./Main/Main.jsx";
+=======
+import NavBar from "../order/NavBar.jsx";
+import Main from "./Main.jsx";
+>>>>>>> 90aba0a00fa727c622fbbc901aca1b4660bc76f4
 import { theme } from "../../../theme/index.js";
 function OrderPage() {
   const { username } = useParams();
