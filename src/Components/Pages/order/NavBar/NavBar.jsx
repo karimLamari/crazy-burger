@@ -28,24 +28,25 @@ const NavBarStyled = styled.div`
   border-top-left-radius: ${theme.borderRadius.extraRound};
   border-top-right-radius: ${theme.borderRadius.extraRound};
 
-
   .left-side {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 ${theme.spacing.md};
+
     .logo-order-page{
       cursor:pointer;
+    }
   }
   .right-side {
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    gap:50px;
     align-items: center;
-    gap: ${theme.spacing.lg};
     padding-right: ${theme.spacing.xl};
 }
 
-    }
+    
 `;
