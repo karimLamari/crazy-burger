@@ -55,6 +55,7 @@ const NavBarStyled = styled.div`
   align-items: center;
   border-top-left-radius: ${theme.borderRadius.extraRound};
   border-top-right-radius: ${theme.borderRadius.extraRound};
+  padding:1px 20px;
 
   .left-side {
     height: 100%;
@@ -71,9 +72,9 @@ const NavBarStyled = styled.div`
     height: 100%;
     display: flex;
     flex-direction: row;
-    gap:50px;
+    gap:10px;
     align-items: center;
-    padding-right: ${theme.spacing.xl};
+    padding-right: 50px;
 }
 
     
