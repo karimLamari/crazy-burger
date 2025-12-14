@@ -3,7 +3,8 @@ import styled from "styled-components";
 import NavBar from "./NavBar/NavBar.jsx";
 import Main from "./Main/Main.jsx";
 import { theme } from "../../../theme/index.js";
-
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 function OrderPage() {
   const { username } = useParams();
 
@@ -13,6 +14,7 @@ function OrderPage() {
         <NavBar username={username} />
         <Main />
       </div>
+      <ToastContainer />
     </OrderPageStyled>
   );
 }
