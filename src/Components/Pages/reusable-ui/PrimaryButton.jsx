@@ -25,7 +25,7 @@ const PrimaryButtonStyled = styled.button`
       &:hover{
         cursor:pointer;
         background-color:${theme.colors.background_white} ;
-        color:${theme.colors.primary} ;
+        color:${theme.colors.primary_burger} ;
       }
 
     

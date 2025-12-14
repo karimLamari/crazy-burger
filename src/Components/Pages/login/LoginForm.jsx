@@ -77,7 +77,6 @@ const LoginFormStyled = styled.form`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: ${theme.fonts.P3};
     color: ${theme.colors.greyDark};
     padding-right: ${theme.spacing.sm};
   }

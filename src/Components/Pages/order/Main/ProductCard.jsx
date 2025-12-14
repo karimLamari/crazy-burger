@@ -23,7 +23,7 @@ const ProductCardStyled = styled.div`
   width: 240px;
   height: 330px;
   border-radius: ${theme.borderRadius.extraRound};
-  box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.2);
   display: grid;
   grid-template-rows: 65% 1fr;
   padding: 20px;

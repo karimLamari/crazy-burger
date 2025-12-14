@@ -19,7 +19,7 @@ export default function Main() {
 const MainStyled = styled.div`
   display: grid;
   width: 100%;
-  background: ${theme.colors.background_white};
+  background: ${theme.colors.white};
   box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2) inset;
   flex: 1;
   border-bottom-left-radius: ${theme.borderRadius.extraRound};

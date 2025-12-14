@@ -18,21 +18,19 @@ const LoginPageStyled = styled.div`
   justify-content: center;
   align-items: center;
   gap: 50px;
-    background:
-        rgba(0, 0, 0, 0.5);
-    background-image:
-        url('/images/background-image.jpg') ;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: darken;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+  background: rgba(0, 0, 0, 0.5);
+  background-image: url("/images/background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  .logo-login-page {
+    transform: scale(2.5);
   }
-  .logo-login-page{
-  transform: scale(2.5);
-}
 `;
