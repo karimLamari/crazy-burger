@@ -25,13 +25,14 @@ const InputStyled = styled.div`
   input{
     border: none;
     font-size: ${theme.fonts.P0};
-    color: ${theme.colors.greySemiDark};
+    color: #17161A;
     width: 100%;
     display: flex;
     align-items: center;
     &::placeholder{
+      border:none;
       background-color: ${theme.colors.white};
-      color: ${theme.colors.greySemiDark};
+      color:#D3D3D3;
       font-size: ${theme.fonts.P0};
     }
   }
