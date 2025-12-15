@@ -13,7 +13,7 @@ export default function LoginPage() {
 }
 
 const LoginPageStyled = styled.div`
-  position: relative; 
+  position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,8 +26,7 @@ const LoginPageStyled = styled.div`
     position: absolute;
     inset: 0;
 
-    background: 
-      linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url("/images/burger-and-fries-background.jpg");
     background-size: cover;
     background-position: center;
