@@ -1,20 +1,17 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom";
-import LoginPage from "./Components/Pages/login/LoginPage";
-import OrderPage from "./Components/Pages/order/OrderPage";
-import ErrorPage from "./Components/Pages/error/ErrorPage";
+import logo from "./logo.svg"
+import "./App.css"
+import LoginPage from "./components/pages/login/LoginPage"
+import { Route, Routes } from "react-router-dom"
+import OrderPage from "./components/pages/order/OrderPage"
+import ErrorPage from "./components/pages/error/ErrorPage"
 
 function App() {
-
   return (
-    <>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LoginPage/>} />
-        <Route path="/order/:username" element={<OrderPage/>} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-    </BrowserRouter>
-    </>
+    <Routes>
+      <Route path="/" element={<LoginPage />} />
+      <Route path="/order/:username" element={<OrderPage />} />
+      <Route path="*" element={<ErrorPage />} />
+    </Routes>
   )
 }
 
