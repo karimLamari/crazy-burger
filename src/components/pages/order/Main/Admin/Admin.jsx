@@ -2,25 +2,25 @@ import styled from "styled-components";
 import { theme } from "../../../../../theme";
 import AdminTabs from "./AdminTabs";
 import AdminPanel from "./AdminPanel";
-import { useState } from 'react';
+import { useContext } from "react";
+import OrderContext from "../../../../../context/OrderContext";
 
 export default function Admin() {
-
-        const [isCollapsed, setIsCollapsed] = useState(false);
+  const {
+    isCollapsed,
+  } = useContext(OrderContext);
 
   return (
-        <AdminStyled>
-            <AdminTabs isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed} />
-            {!isCollapsed && <AdminPanel/>}
-
-        </AdminStyled>
-  )
+    <AdminStyled>
+      <AdminTabs />
+      {!isCollapsed && <AdminPanel />}
+    </AdminStyled>
+  );
 }
 
 const AdminStyled = styled.div`
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 `;
-
