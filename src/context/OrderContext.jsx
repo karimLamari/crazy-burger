@@ -7,12 +7,8 @@ const OrderContext = createContext({
   isCollapsed: false,
   setIsCollapsed: () => {},
 
-  isAddSelected: true,
-  setIsAddSelected: () => {},
-  
-  isEditSelected: false,
-  setIsEditSelected: () => {}
-  
+  activeTab: null,
+  setActiveTab: () => {},
 });
 
 export default OrderContext;
